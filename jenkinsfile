@@ -1,0 +1,9 @@
+node{
+    stage('gti clone'){
+        git branch: 'main', url: 'https://github.com/kavya222003/DN-4.0-Java-FSE-6410535-Kavya-Sri-Tungala.git'
+    }
+    stage('Execute java'){
+       bat '''javac Test.java
+java Test.java'''
+    }
+}
